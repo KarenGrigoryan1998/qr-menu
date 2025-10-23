@@ -1,0 +1,80 @@
+services:
+  app-nginx:
+    container_name: "app-nginx"
+    build:
+      context: ./docker/nginx
+    depends_on:
+      - app-api
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backend:/var/www/html
+    networks:
+      - app-network
+
+  app-api:
+    container_name: "app-api"
+    build:
+      context: ./docker/php
+    depends_on:
+      - app-postgres
+      - app-redis
+    environment:
+      TZ: 'UTC'
+    volumes:
+      - ./backend:/var/www/html
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - app-network
+
+  app-front:
+    container_name: "app-front"
+    build:
+      context: ./docker/front
+    volumes:
+      - ./frontend/app:/usr/src/app
+    restart: always
+    tty: true
+    working_dir: '/usr/src/app'
+    ports:
+      - "3000:3000"
+    depends_on:
+      - app-nginx
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3000
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - app-network
+
+  app-postgres:
+    image: postgres:16-alpine
+    container_name: "app-postgres"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_DB: qr_menu
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: password
+      TZ: "UTC"
+    ports:
+      - 5440:5432
+    networks:
+      - app-network
+
+  app-redis:
+    image: redis:alpine
+    container_name: "app-redis"
+    restart: always
+    ports:
+      - 6380:6379
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

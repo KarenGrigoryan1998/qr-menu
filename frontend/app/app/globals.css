@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for in-page category anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  /* Shimmer utility for skeletons */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+    animation: shimmer 1.25s infinite;
+  }
+
+  /* Entrance animations */
+  .animate-fade-in {
+    animation: fade-in 200ms ease-out both;
+  }
+  .animate-slide-up {
+    animation: slide-up 220ms ease-out both;
+  }
+  .animate-scale-in {
+    animation: scale-in 200ms ease-out both;
+  }
+}
+
+/* Base colors (use CSS vars or hex to avoid theme() dependency here) */
+body {
+  background-color: #FFF7F0; /* surface */
+  color: #1C1C1C; /* text */
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --ring: 234 88% 60%; /* rose-500 fallback for focus */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Components */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors duration-200 min-h-[44px] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-rose-600 text-white hover:bg-rose-700 active:bg-rose-800 disabled:bg-rose-400;
+  }
+  .btn-secondary {
+    @apply btn border-2 border-rose-600 bg-white text-rose-600 hover:bg-rose-50 active:bg-rose-100 disabled:border-gray-300 disabled:text-gray-400;
+  }
+  .btn-gradient {
+    @apply btn bg-gradient-to-r from-rose-600 to-orange-600 text-white hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply btn border border-gray-300 bg-white text-gray-900 hover:bg-gray-50;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-gray-300 px-3 py-1 text-sm text-gray-700 hover:bg-gray-50 transition;
+  }
+  .card {
+    @apply rounded-xl border border-gray-200 bg-white shadow-sm;
+  }
+  .card-hover {
+    @apply transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-md;
+  }
+  .title {
+    @apply text-xl font-bold text-gray-900;
+  }
+
+  /* Headings inspired by restaurant templates */
+  h1, .h1 { @apply font-display text-3xl md:text-4xl font-semibold tracking-tight text-gray-900; }
+  h2, .h2 { @apply font-display text-2xl md:text-3xl font-semibold tracking-tight text-gray-900; }
+  h3, .h3 { @apply font-display text-xl md:text-2xl font-semibold tracking-tight text-gray-900; }
+
+  /* Inputs */
+  .input {
+    @apply w-full px-3 py-2 text-sm text-black border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+@keyframes slide-up {
+  from { transform: translateY(12px); opacity: 0 }
+  to { transform: translateY(0); opacity: 1 }
+}
+@keyframes scale-in {
+  from { transform: scale(0.98); opacity: 0 }
+  to { transform: scale(1); opacity: 1 }
+}
+

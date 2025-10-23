@@ -1,0 +1,198 @@
+[
+    {
+        "name": "Appetizers",
+        "name_hy": "Նախուտեստներ",
+        "name_en": "Appetizers",
+        "name_ru": "Закуски",
+        "image_path": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Breakfast",
+        "name_hy": "Նախաճաշ",
+        "name_en": "Breakfast",
+        "name_ru": "Завтраки",
+        "image_path": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Brunch",
+        "name_hy": "Բրանչ",
+        "name_en": "Brunch",
+        "name_ru": "Бранч",
+        "image_path": "https://images.unsplash.com/photo-1498568715251-5edb102a791e?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Salads",
+        "name_hy": "Աղցաններ",
+        "name_en": "Salads",
+        "name_ru": "Салаты",
+        "image_path": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Soups",
+        "name_hy": "Ապուրներ",
+        "name_en": "Soups",
+        "name_ru": "Супы",
+        "image_path": "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Grill",
+        "name_hy": "Խորոված",
+        "name_en": "Grill",
+        "name_ru": "Мангал",
+        "image_path": "https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "BBQ",
+        "name_hy": "Բարեբիքյու",
+        "name_en": "BBQ",
+        "name_ru": "Барбекю",
+        "image_path": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Steaks",
+        "name_hy": "Սթեյքեր",
+        "name_en": "Steaks",
+        "name_ru": "Стейки",
+        "image_path": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Seafood",
+        "name_hy": "Ծովամթերք",
+        "name_en": "Seafood",
+        "name_ru": "Морепродукты",
+        "image_path": "https://images.unsplash.com/photo-1548940740-204726a19be3?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Burgers",
+        "name_hy": "Բուրգերներ",
+        "name_en": "Burgers",
+        "name_ru": "Бургеры",
+        "image_path": "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Pizza",
+        "name_hy": "Պիցցա",
+        "name_en": "Pizza",
+        "name_ru": "Пицца",
+        "image_path": "https://images.unsplash.com/photo-1548365328-9f547fb095de?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Pasta",
+        "name_hy": "Պաստաներ",
+        "name_en": "Pasta",
+        "name_ru": "Паста",
+        "image_path": "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8bbf?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Sushi",
+        "name_hy": "Սուշի",
+        "name_en": "Sushi",
+        "name_ru": "Суши",
+        "image_path": "https://images.unsplash.com/photo-1544025162-8e1ff1a5a732?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Sandwiches",
+        "name_hy": "Սենդվիչներ",
+        "name_en": "Sandwiches",
+        "name_ru": "Сэндвичи",
+        "image_path": "https://images.unsplash.com/photo-1604908554027-2351e8c0d9bb?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Shawarma",
+        "name_hy": "Շաուրմա",
+        "name_en": "Shawarma",
+        "name_ru": "Шаурма",
+        "image_path": "https://images.unsplash.com/photo-1617195737497-5ce9e3ea3647?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Kebabs",
+        "name_hy": "Քեբաբներ",
+        "name_en": "Kebabs",
+        "name_ru": "Кебабы",
+        "image_path": "https://images.unsplash.com/photo-1604908553731-6b2b7de5f00e?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Vegetarian",
+        "name_hy": "Բուսական",
+        "name_en": "Vegetarian",
+        "name_ru": "Вегетарианское",
+        "image_path": "https://images.unsplash.com/photo-1543332164-6e82f355bad8?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Vegan",
+        "name_hy": "Վեգան",
+        "name_en": "Vegan",
+        "name_ru": "Веганское",
+        "image_path": "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Kids Menu",
+        "name_hy": "Մանկական մենյու",
+        "name_en": "Kids Menu",
+        "name_ru": "Детское меню",
+        "image_path": "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Sides",
+        "name_hy": "Գարնիրներ",
+        "name_en": "Sides",
+        "name_ru": "Гарниры",
+        "image_path": "https://images.unsplash.com/photo-1604908177522-0700122972eb?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Sauces",
+        "name_hy": "Սոուսներ",
+        "name_en": "Sauces",
+        "name_ru": "Соусы",
+        "image_path": "https://images.unsplash.com/photo-1625944524702-9ecf93dffa50?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Hot Drinks",
+        "name_hy": "Տաք խմիչքներ",
+        "name_en": "Hot Drinks",
+        "name_ru": "Горячие напитки",
+        "image_path": "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Cold Drinks",
+        "name_hy": "Սառը խմիչքներ",
+        "name_en": "Cold Drinks",
+        "name_ru": "Холодные напитки",
+        "image_path": "https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Coffee & Tea",
+        "name_hy": "Սուրճ և Թեյ",
+        "name_en": "Coffee & Tea",
+        "name_ru": "Кофе и чай",
+        "image_path": "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Cocktails",
+        "name_hy": "Կոկտեյլներ",
+        "name_en": "Cocktails",
+        "name_ru": "Коктейли",
+        "image_path": "https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Beer",
+        "name_hy": "Գարեջուր",
+        "name_en": "Beer",
+        "name_ru": "Пиво",
+        "image_path": "https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Wine",
+        "name_hy": "Գինի",
+        "name_en": "Wine",
+        "name_ru": "Вино",
+        "image_path": "https://images.unsplash.com/photo-1514361892635-6b07e31e75d9?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+        "name": "Desserts",
+        "name_hy": "Աղանդեր",
+        "name_en": "Desserts",
+        "name_ru": "Десерты",
+        "image_path": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?q=80&w=1400&auto=format&fit=crop"
+    }
+]
